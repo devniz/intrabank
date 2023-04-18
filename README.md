@@ -58,8 +58,3 @@ curl --location 'localhost:8080/transaction/send' \
   well to decrease or increase accounts accordingly.
 
 - Having OpenAPI documentation and perhaps contracting testing for a production grade API will be necessary.
-
-### Contact
-
-- Email: nizar.bousebsi@gmail.com
-- Phone: 07 562 923 669
