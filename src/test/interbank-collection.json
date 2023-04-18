@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "584bfc76-bb90-4205-b19d-1333ae47f166",
+		"name": "interbank",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4263844"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/accounts/111/balance",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/accounts/111/balance",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accounts",
+						"111",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/accounts/112/statements/mini?",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/accounts/112/statements/mini?",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accounts",
+						"112",
+						"statements",
+						"mini"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/transaction/send",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"senderAccountId\":\"111\",\n    \"receiverAccountId\": \"112\",\n    \"amount\": 10,\n    \"transactionType\": \"DEBIT\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/transaction/send",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transaction",
+						"send"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

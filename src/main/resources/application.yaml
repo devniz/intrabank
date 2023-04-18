@@ -1,0 +1,4 @@
+spring:
+  interbank:
+    swagger:
+      host: http://localhost:8080
